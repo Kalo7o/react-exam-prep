@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default class FurnitureList extends Component {
@@ -15,7 +16,7 @@ export default class FurnitureList extends Component {
                                 <cite title="Source Title">{price} lv.</cite>
                             </footer>
                             <div className="pull-right">
-                                <a href={'/details/' + id} className="btn btn-info">Details</a>
+                                <Link to={'/details/' + id} className="btn btn-info">Details</Link>
                             </div>
                         </blockquote>
                     </div>
